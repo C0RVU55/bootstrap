@@ -3,19 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <!-- 메타태그 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- css -->
+<link href="/boots/assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/boots/assets/bootstrap/css/mysite.css" rel="stylesheet" type="text/css">
 
-<!-- 자바스크립트 -->
+<!-- 자바스크립트 (jquery 먼저 써야 됨 주의! -->
+<script type="text/javascript" src="/boots/assets/js/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/boots/assets/bootstrap/js/bootstrap.js"></script>
 
+<style type="text/css">
+	div{border: 1px solid #00ff00;}
+</style>
 
 <title>Insert title here</title>
 </head>
 <body>
 
-	sdfsdf
+	<!-- min파일은 용량 절약을 위해 공백 등을 빼서 최소화한 거. 근데 부트스트랩 자체가 제이쿼리를 같이 써야 됨. -->
+
+	<!-- <p class="btn btn-danger">테스트입니다.</p> -->
+
+	<div class="container"> <!-- container-fluid 꽉 채우고 싶을 때 -->
+		<div class="row">
+			<!-- 줄바꿈 -->
+			<!-- ㅁㄴㅇㄹ 마진 패딩 확인 가능한데 row 쓰면 마진을 없애서 파란영역에만 나와야 하는 텍스트가 연두영역(마진)부터 시작함. -->
+			<!-- 그리드 시스템, 가로폭을 안 정하면 기본적으로 큰 틀에서 12개로 나눠서 씀. class="col-md-1" -->
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">.col-md-8</div> <!-- 8칸 쓰기. 근데 이 8칸을 또 12칸으로 나눠서 쓸 수 있음. -->
+			<div class="col-md-4">.col-md-4</div> <!-- 가로폭 합이 항상 12여야 됨. -->
+		</div>
+		<div class="row">
+			<div class="col-md-4">.col-md-4</div>
+			<div class="col-md-4">.col-md-4</div>
+			<div class="col-md-4">.col-md-4</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">.col-lg-6</div> <!-- 웹 줄였을 때 1200픽셀보다 작으면 위치 바뀜. -->
+			<div class="col-lg-6">.col-lg-6</div>
+		</div>
+				<div class="row"> <!-- row붙이면 15픽셀 여백 없애고 시작. 모바일에 유용. -->
+			<div class="col-md-10">.col-md-10</div>
+				<div class="col-md-4">.col-md-10-1</div>
+				<div class="col-md-4">.col-md-10-2</div>
+			<div class="col-md-6">.col-md-6</div>
+		</div>
+		
+		
+	</div>
 
 </body>
 
+<script type="text/javascript">
+	console.log($("p"));
+</script>
 
 </html>
